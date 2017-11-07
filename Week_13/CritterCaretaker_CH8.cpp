@@ -37,51 +37,60 @@ void Critter::PassTime(int time) {                  //
     m_Boredom += time;                              //
 }
 
-void Critter::Talk() {
-    cout << "I'm a critter and I feel ";
-    int mood = GetMood();
-    if (mood > 15) {
-        cout << "mad.\n";
-	}
-    else if (mood > 10) {
-        cout << "frustrated.\n";
-	}
-    else if (mood > 5) {
-        cout << "okay.\n";
-	}
-    else {
-        cout << "happy.\n";
-	}
-
-    PassTime();
+void Critter::Talk() {                              //
+    cout << "I'm a critter and I feel ";            //
+    int mood = GetMood();                           //
+    if (mood > 15) {                                //
+        cout << "mad.\n";                           //
+	}                                               //
+    else if (mood > 10) {                           //
+        cout << "frustrated.\n";                    //
+	}                                               //
+    else if (mood > 5) {                            //
+        cout << "okay.\n";                          //
+	}                                               //
+    else {                                          //
+        cout << "happy.\n";                         //
+	}                                               //
+                                                    //
+    PassTime();                                     //
 }
 
-void Critter::Eat(int food) {
-    cout << "Brruppp.\n";
-    m_Hunger -= food;
-    if (m_Hunger < 0) {
-        m_Hunger = 0;
-	}
-
-    PassTime();
+void Critter::Eat(int food) {                       //
+    cout << "Brruppp.\n";                           //
+    m_Hunger -= food;                               //
+    if (m_Hunger < 0) {                             //
+        m_Hunger = 0;                               //
+	}                                               //
+                                                    //
+    PassTime();                                     //
 }
 
-void Critter::Play(int fun) {
-    cout << "Wheee!\n";
-    m_Boredom -= fun;
-    if (m_Boredom < 0) {
-        m_Boredom = 0;
-	}
-
-    PassTime();
+void Critter::Play(int fun) {                       //
+    cout << "Wheee!\n";                             //
+    m_Boredom -= fun;                               //
+    if (m_Boredom < 0) {                            //
+        m_Boredom = 0;                              //
+	}                                               //
+                                                    //
+    PassTime();                                     //
 }
 
 int main() {
-	Critter crit;
-	crit.Talk();
+	Critter crit;                                      //
+	crit.Talk();                                       //
+    
+    /*
+    The following is the general setup for a basic list
+    of commands using a do loop and switch statement to
+    create a typical menu to interact with the critter.
 
-	int choice;
-	do {
+    The "do" section creates the list of options to 
+    choose from and the "switch" statement calls a 
+    function based upon the user selection.
+     */
+	int choice;                                        
+	do {                                       
         cout << "\nCritter Caretaker\n\n";
         cout << "0 - Quit\n";
         cout << "1 - Listen to your critter\n";
