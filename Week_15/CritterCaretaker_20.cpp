@@ -19,7 +19,6 @@ private:                                            //  The "private" definition
     int m_Hunger;                                   //  Private data member to store "Hunger" level
     int m_Boredom;                                  //  Private data member to store "Boredom" level
                                                     //
-    int GetMood() const;                            //  Constant integer member function "GetMood" is declared.
     void PassTime(int time = 1);                    //  Void member function "PassTime" is declared passing an argument of (int time = 1)
 
 };
@@ -29,10 +28,6 @@ Critter::Critter(int hunger, int boredom):          //  Class constructor is def
     m_Boredom(boredom)                              //  Private data member "m_boredom" is being sent the value of "boredom".
 {}
 
-inline int Critter::GetMood() const {               //  Inline integer private member function "GetMood" is defined.
-    return (m_Hunger + m_Boredom);                  //  The function returns the sum of "m_hunger" and "m_mood" create the mood value for the critter.
-}
-
 void Critter::PassTime(int time) {                  //  Void private memeber function "PassTime" is defined with the value of "time" being passed to it.
     m_Hunger += time;                               //  Adds the value of "time" to "m_hunger"
     m_Boredom += time;                              //  Adds the value of "time" to "m_boredom"
@@ -41,31 +36,37 @@ void Critter::PassTime(int time) {                  //  Void private memeber fun
 void Critter::Debug(int hunger, int boredom) {
     m_Hunger = hunger;
     m_Boredom = boredom;
-    cout << "m_Hunger is now set to " << hunger << endl;
-    cout << "m_Boredom is now set to " << boredom << endl;
+    cout << "m_Hunger is now set to " << m_Hunger << endl;
+    cout << "m_Boredom is now set to " << m_Boredom << endl;
 }
 
 void Critter::Talk() {                              //  Void public member function "Talk" is defined.
     cout << "I'm a critter and I feel ";            //  "I'm A critter and I feel" is sent to the console.
-    int mood = GetMood();                           //  Function variable "mood" is given te value of "GetMood" function.
-    /*
-    The following is a standard list of "if" state-
-    ments.  The response is based upon the value of
-    "mood".  Once the operation completes, "PassTime"
-    is called.
-     */
-    if (mood > 15) {
-        cout << "mad.\n";
-	}
-    else if (mood > 10) {
-        cout << "frustrated.\n";
-	}
-    else if (mood > 5) {
-        cout << "okay.\n";
-	}
+    if (m_Boredom > 15) {
+        cout << "mad ";
+    }
+    else if (m_Boredom > 10) {
+        cout << "frustrated ";
+    }
+    else if (m_Boredom > 5) {
+        cout << "okay ";
+    }
     else {
-        cout << "happy.\n";
-	}
+        cout << "happy ";
+    }
+
+    if (m_Hunger > 15) {
+        cout << "and starving!!\n";
+    }
+    else if (m_Hunger > 10) {
+        cout << "and VERY hungry.\n";
+    }
+    else if (m_Hunger > 5) {
+        cout << "and kinda hungry.\n";
+    }
+    else {
+        cout << "and full!\n";
+    }
 
     PassTime();
 }
@@ -128,6 +129,15 @@ int main() {
 			case 3:	
 				crit.Play();
 				break;
+            case 4: 
+                int user1;
+                int user2;
+                cout << "\nS-s-s-s-secret Menu!\nSo here we get to set the values for 'hunger' and 'boredom'\nWhat value would you like to set to 'hunger'?::";
+                cin >> user1;
+                cout << "What value would you like to set to 'boredom'?::";
+                cin >> user2;
+                crit.Debug(user1, user2);
+                break;
 			default:
 				cout << "\nSorry, but " << choice << " isn't a valid choice.\n";
         }
