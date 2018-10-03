@@ -1,5 +1,5 @@
 /**
- * Brice Lohman -- Coding Final for IN200
+ * Coding Final for IN200
  * Let's Make the Magic Happen, it has been a blast!
  */
 

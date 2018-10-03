@@ -1,4 +1,3 @@
-//	Brice Lohman
 //	Week 7 -- In Class Work
 //  Function, Function, what's your Function?
 

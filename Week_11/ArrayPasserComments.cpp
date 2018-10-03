@@ -1,4 +1,4 @@
-//  Brice Lohman -- Array Passer
+//  Array Passer
 
 
 #include <iostream>     //  We are using the basic commands from the console I/O kit.

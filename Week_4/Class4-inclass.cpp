@@ -1,4 +1,4 @@
-//	Brice Lohman In Class assignment #4
+//	In Class assignment #4
 
 #include <iostream> 
 #include <string>

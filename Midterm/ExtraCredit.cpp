@@ -1,4 +1,4 @@
-//	Brice Lohman -- Midterm Extra Credit
+//	Midterm Extra Credit
 
 #include <iostream>
 #include <string>

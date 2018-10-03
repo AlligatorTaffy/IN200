@@ -1,4 +1,4 @@
-// Brice Lohman Wednesday Night C++ Fall 2017
+// Wednesday Night C++ Fall 2017
 // In Class Work
 // Chapter 1 Review
 

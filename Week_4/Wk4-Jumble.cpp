@@ -1,4 +1,4 @@
-//	Brice Lohman - Week 4
+//	Week 4
 //  The Wordiest of Jumblies NOW WITH COMMENTS!
 
 #include <iostream>		//	Needed for cout and console verbosity

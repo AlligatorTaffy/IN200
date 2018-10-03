@@ -1,5 +1,5 @@
 /**
- * Brice Lohman -- Coding Final for IN200
+ * Coding Final for IN200
  * So this is supposed to be easy?
  */
 

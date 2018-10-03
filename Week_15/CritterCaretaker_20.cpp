@@ -1,5 +1,5 @@
 /*
-Brice Lohman -- Week 8
+Week 8
 Critter Caretaker
  */
 

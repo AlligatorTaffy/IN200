@@ -1,4 +1,3 @@
-//	Brice Lohman
 //	Homework Week 6
 //  Function, Function, what's your Function?
 

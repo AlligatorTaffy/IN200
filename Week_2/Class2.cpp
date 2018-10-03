@@ -1,4 +1,3 @@
-// Brice IN200 Fall 2017
 // In-class work!
 
 #include <iostream>

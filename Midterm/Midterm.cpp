@@ -22,7 +22,7 @@ int main() {
 
 
 	// Number 1
-	string name = "Brice Lohman";
+	string name = "AlligatorTaffy";
 	cout << name << endl;
 	cout << name.size() << endl;
 	

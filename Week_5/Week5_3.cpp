@@ -1,4 +1,3 @@
-//	Brice Lohman
 //	Week 5 -- Vectors, iterators, and algorithms
 
 #include <iostream>

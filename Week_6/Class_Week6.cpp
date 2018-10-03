@@ -1,6 +1,5 @@
-//	Brice Lohman
 //	Week 6 -- In Class Work
-//  Function, Function, what's your Function?
+//	Function, Function, what's your Function?
 
 #include <iostream>
 #include <string>

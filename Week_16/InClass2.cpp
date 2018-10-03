@@ -1,5 +1,4 @@
 /**
- * Brice Lohman IN200
  * Chapter 9 - Adv. Classes and the HEAP
  */
 

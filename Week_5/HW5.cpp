@@ -1,4 +1,3 @@
-//	Brice Lohman
 //	Week 5 -- Let's Play the Name Changing Game!
 
 #include <iostream>

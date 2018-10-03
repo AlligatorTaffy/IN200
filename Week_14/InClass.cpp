@@ -1,5 +1,5 @@
 /**
- * 	Brice Lohman In class work 11-8-17
+ * 	In class work 11-8-17
  */
 
 #include <iostream>

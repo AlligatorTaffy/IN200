@@ -1,4 +1,3 @@
-//	Brice Lohman
 //  Tic-Tac-Toe with comments
 
 #include <iostream>				//

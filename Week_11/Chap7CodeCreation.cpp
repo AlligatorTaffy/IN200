@@ -1,4 +1,4 @@
-//	Brice Lohman - IN200 W 7pm -- Chapter 7 Code Creation
+//	IN200 W 7pm -- Chapter 7 Code Creation
 #include <iostream>
 #include <string>
 #include <vector>

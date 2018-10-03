@@ -1,4 +1,4 @@
-//	Brice Lohman - IN200 In-Class Week 10
+//	IN200 In-Class Week 10
 
 #include <iostream>
 #include <string>

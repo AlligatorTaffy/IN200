@@ -1,4 +1,4 @@
-// Brice Lohman "Hello World" Assignment 1
+// "Hello World" Assignment 1
 
 #include <iostream>
 using namespace std;

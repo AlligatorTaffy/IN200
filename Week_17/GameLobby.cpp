@@ -1,5 +1,4 @@
 /**
- * Brice Lohman
  * Comments on the Game Lobby
  */
 
